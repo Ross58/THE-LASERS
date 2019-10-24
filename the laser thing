@@ -1,0 +1,35 @@
+
+int x=0;
+
+void setup() {
+  pinMode (3,OUTPUT);
+  pinMode (5,OUTPUT);
+  
+}
+
+void loop() {
+digitalWrite (3,HIGH);
+digitalWrite (5,LOW);
+
+x=random(50,200);
+delay(x);
+
+digitalWrite (3,LOW);
+digitalWrite (5,LOW);
+
+
+x=random(50,200);
+delay(x);
+
+digitalWrite (3,LOW);
+digitalWrite (5,HIGH);
+
+x=random(50,200);
+delay(x);
+
+digitalWrite (3,HIGH);
+digitalWrite (5,LOW);
+
+x=random(50,200);
+delay(x);
+}
